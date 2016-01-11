@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -35,12 +36,12 @@
         </div>
         <article class="template template" data-category="cat">
           <header>
-            <h1>Title</h1>
+            <h1>{{Title}}</h1>
             <div class="byline">
             </div>
           </header>
           <section class="article-body"></section>
-          <a href="#" class="read-on">Read on &rarr;</a>
+          <a href="#" class="read-on">{{Read on}}&rarr;</a>
         </article>
       </section>
       <section id="about" class="tab-content">
@@ -57,8 +58,9 @@
         </section>
       </section>
     </main>
-    <script src ="/Users/rdavid8/portfolio/hamburger.png"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"</script>
+    <script src ="/Users/rdavid8/portfolio/hamburger.png"></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
   </body>
