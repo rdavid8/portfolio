@@ -1,8 +1,44 @@
-.template {
-  display: none;
+.site-header {
+  background: #696969;
 }
 
-.draft {
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
+}
+
+.icon-menu {
+
+}
+
+.main-nav {
+  padding: 0.1em;
+}
+
+.main-nav ul {
+  display: block;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+.template {
   display: none;
 }
 
@@ -13,13 +49,4 @@
 .byline a {
   font-weight: bold;
   text-decoration: none;
-  color: inherit;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
 }
