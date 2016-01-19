@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Ryan David</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/skeleton.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="{{textClass}} project">
+        <div id="project-text">
+          <h3 class="title">{{title}}</h3>
+          <p class="published">Published: <time>{{publishedDate}}</time></p>
+          <p class="description">{{{description}}}</p>
+        </div>
+        <div id="project-buttons" class="five columns offset-by-seven">
+          <a href="{{projectURL}}" class="button button-primary">Play It</a>
+          <a href="{{githubURL}}" class="button">View on Github</a>
+        </div>
+        <img src="{{imgURL}}" alt="">
+      </article>
+    </script>
+  </head>
+  <body>
+    <header class="header-content">
+      <nav class="nav-bar">
+        <ul>
+          <li class="tab" data-content="about-me"><a href="#about-me" class="">About Me</a></li>
+          <li class="tab" data-content="portfolio"><a href="#portfolio" class="">Portfolio</a></li>
+          <li class="tab" data-content="contact"><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <banner class="intro-banner row">
+        <h1>Welcome</h1>
+        <p>Awesome</p>
+      </banner>
+      <section id="about-me" class="about-me row">
+        <h3>Insert Text here</h3>
+        <div class="three columns education">
+          <h4>Education</h4>
+          <ul>
+            <li>Air Force</li>
+            <li>Code Fellows</li>
+          </ul>
+        </div>
+        <div class="five columns">
+          <h4>About Me</h4>
+          <p>What to put here?</p>
+        </div>
+        <div class="three columns experience">
+          <h4>Experience</h4>
+          <ul>
+            <li>Really</li>
+            <li>Cool</li>
+            <li>Stuff</li>
+          </ul>
+        </div>
+        <ul id="social-icons" class="offset-by-two eight columns">
+          <div class ="container"><img id="profile" src=  "img/224-happy.png"/></div>
+          <h1>Ryan David</h1>
+          <section id="social">
+            <a href="https://github.com/rdavid8"><img src="img/433-github.png"/></a>
+            <a href="https://www.linkedin.com/in/ryan-david-427986a
+    "><img src="img/459-linkedin2.png"/></a>
+            <a href="https://twitter.com/"><img src="img/407-twitter.png"/></a>
+            <img id="menu" src="img/190-menu.png"/>
+        </ul>
+      </section>
+      <section class="portfolio row" id="portfolio">
+        <h3>Portfolio</h3>
+      </section>
+    </main>
+    <footer class="row">
+      <h2>Contact me</h2>
+      <ul class="contact" id="contact">
+
+        <li><a href="mailto:rdavid8@gmail.com"><img src="img/389-mail2.png" alt=""></a></li>
+      </ul>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/viewManager.js"></script>
+      <script src="scripts/invoke.js"></script>
+    </footer>
+  </body>
+</html>
